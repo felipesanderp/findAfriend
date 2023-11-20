@@ -22,4 +22,13 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: 400;
     font-size: 1rem;
   }
+
+  img, svg {
+    max-width: 100%;
+    height: auto;
+  }
+
+  svg {
+    overflow: visible;
+  }
 `

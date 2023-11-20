@@ -1,26 +1,39 @@
-import { HomeContainer, LogoContainer, Logo } from './styles'
+import {
+  Page,
+  HomeContainer,
+  LogoContainer,
+  ContentHeading,
+  Heading,
+  Footer,
+  Subtitle,
+  SearchContainer,
+} from './styles'
 
 import logoImg from '../../assets/logo-findafriend.svg'
-import dogsImg from '../../assets/dogs.png'
+import petsImg from '../../assets/pets.svg'
 
 export function Home() {
   return (
-    <HomeContainer>
-      <LogoContainer>
-        <Logo>
+    <Page>
+      <HomeContainer>
+        <LogoContainer>
           <img src={logoImg} alt="FindAFriend" />
-          <h2>FindAFriend</h2>
-        </Logo>
+          <span>FindAFriend</span>
+        </LogoContainer>
 
-        <h1>Leve a felicidade para o seu lar</h1>
-
-        <span>
-          Encontre o animal de estimação ideal para o seu estilo de vida!
-        </span>
-      </LogoContainer>
-      <div>
-        <img src={dogsImg} alt="" />
-      </div>
-    </HomeContainer>
+        <ContentHeading>
+          <Heading>Leve a felicidade para o seu lar</Heading>
+          <img src={petsImg} alt="" />
+        </ContentHeading>
+        <Footer>
+          <Subtitle>
+            Encontre o animal de estimação ideal para seu estilo de vida!
+          </Subtitle>
+          <SearchContainer>
+            <span>Busque um amigo:</span>
+          </SearchContainer>
+        </Footer>
+      </HomeContainer>
+    </Page>
   )
 }
