@@ -52,3 +52,15 @@ export const Logo = styled.div`
     color: ${(props) => props.theme.colors.white};
   }
 `
+export const Content = styled.div``
+
+export const Title = styled.h2`
+  font-size: 52px;
+  margin-bottom: 102px;
+`
+
+export const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+`
