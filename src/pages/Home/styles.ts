@@ -88,3 +88,16 @@ export const SearchContainer = styled.div`
     }
   }
 `
+
+export const UFSelectContainer = styled.div`
+  @media ${(props) => props.theme.media.aboveDesktop} {
+    max-width: 4.5rem;
+    margin-right: 0.625rem;
+  }
+`
+export const StateSelectContainer = styled.div`
+  @media ${(props) => props.theme.media.aboveDesktop} {
+    width: 280px;
+    margin-right: 32px;
+  }
+`

@@ -7,6 +7,8 @@ import {
   Footer,
   Subtitle,
   SearchContainer,
+  UFSelectContainer,
+  StateSelectContainer,
 } from './styles'
 
 import logoImg from '../../assets/logo-findafriend.svg'
@@ -32,6 +34,8 @@ export function Home() {
           <SearchContainer>
             <span>Busque um amigo:</span>
           </SearchContainer>
+          <UFSelectContainer></UFSelectContainer>
+          <StateSelectContainer></StateSelectContainer>
         </Footer>
       </HomeContainer>
     </Page>
