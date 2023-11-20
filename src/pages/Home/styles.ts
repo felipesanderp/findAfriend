@@ -1,4 +1,5 @@
 import { styled } from 'styled-components'
+import { darken } from 'polished'
 
 export const Page = styled.div`
   background-color: ${(props) => props.theme.colors['red-500']};
@@ -77,6 +78,29 @@ export const SearchContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 72px;
+    height: 72px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: ${(props) => props.theme.colors['yellow-500']};
+
+    transition: all 0.2s linear;
+
+    svg {
+      color: ${(props) => props.theme.colors['blue-500']};
+    }
+
+    &:hover {
+      background-color: ${darken(0.1, '#F4D35E')};
+    }
+  }
 
   @media ${(props) => props.theme.media.aboveDesktop} {
     justify-content: space-between;

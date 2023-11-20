@@ -14,6 +14,7 @@ import {
 import logoImg from '../../assets/logo-findafriend.svg'
 import petsImg from '../../assets/pets.svg'
 import { Select } from '../../components/Select'
+import { Search } from 'lucide-react'
 
 const ufs = [
   { value: 'SP', label: 'SP' },
@@ -52,13 +53,17 @@ export function Home() {
           </Subtitle>
           <SearchContainer>
             <span>Busque um amigo:</span>
+
+            <UFSelectContainer>
+              <Select options={ufs} onSelect={handleSelectUF} isOutlined />
+            </UFSelectContainer>
+            <StateSelectContainer>
+              <Select options={states} onSelect={handleSelectState} />
+            </StateSelectContainer>
+            <button>
+              <Search />
+            </button>
           </SearchContainer>
-          <UFSelectContainer>
-            <Select options={ufs} onSelect={handleSelectUF} isOutlined />
-          </UFSelectContainer>
-          <StateSelectContainer>
-            <Select options={states} onSelect={handleSelectState} />
-          </StateSelectContainer>
         </Footer>
       </HomeContainer>
     </Page>

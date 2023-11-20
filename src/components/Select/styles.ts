@@ -11,7 +11,7 @@ export const SelectContainer = styled.select<SelectContainerProps>`
   border: none;
   background-color: ${(props) => props.theme.colors['red-300']};
   color: ${(props) => props.theme.colors.white};
-  height: 60px;
+  height: 72px;
   font-weight: 800;
 
   ${(props) =>
