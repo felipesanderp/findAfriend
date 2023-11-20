@@ -5,12 +5,16 @@ interface SelectProps {
     label: string
     value: string
   }[]
+  isOutlined?: boolean
   onSelect: (value: any) => void
 }
 
-export function Select({ options, onSelect }: SelectProps) {
+export function Select({ options, isOutlined, onSelect }: SelectProps) {
   return (
-    <SelectContainer onChange={(e) => onSelect(e.target.value)}>
+    <SelectContainer
+      isOutlined={isOutlined}
+      onChange={(e) => onSelect(e.target.value)}
+    >
       {options.map(({ label, value }) => (
         <Option key={label} value={value}>
           {label}

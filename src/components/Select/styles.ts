@@ -1,6 +1,10 @@
-import { styled } from 'styled-components'
+import { styled, css } from 'styled-components'
 
-export const SelectContainer = styled.select`
+interface SelectContainerProps {
+  isOutlined?: boolean
+}
+
+export const SelectContainer = styled.select<SelectContainerProps>`
   width: 100%;
   padding: 14px;
   border-radius: 20px;
@@ -9,6 +13,13 @@ export const SelectContainer = styled.select`
   color: ${(props) => props.theme.colors.white};
   height: 60px;
   font-weight: 800;
+
+  ${(props) =>
+    props.isOutlined &&
+    css`
+      background-color: transparent;
+      border: 1px solid ${(props) => props.theme.colors.white};
+    `}
 `
 
 export const Option = styled.option`
