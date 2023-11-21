@@ -23,3 +23,29 @@ export const AsideBody = styled.div`
   height: 100%;
   padding: 35px 56px 40px 56px;
 `
+
+export const Content = styled.div`
+  background-color: ${(props) => props.theme.colors['red-100']};
+  padding: 32px;
+`
+
+export const ContentHeader = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 49px;
+`
+export const SelectContainer = styled.div`
+  width: 210px;
+`
+
+export const ContainerCards = styled.div`
+  display: grid;
+  grid-template-columns: '1fr 1fr';
+  gap: 16px;
+
+  @media ${(props) => props.theme.media.aboveTablet} {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 280px));
+    gap: 32px;
+  }
+`
