@@ -26,20 +26,32 @@ export const AsideBody = styled.div`
 
 export const Content = styled.div`
   background-color: ${(props) => props.theme.colors['red-100']};
-  padding: 32px;
+  padding: 32px 50px;
 `
 
 export const ContentHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 49px;
+  margin-bottom: 63px;
+  margin-top: 60px;
+
+  > p {
+    font-size: 1.25rem;
+    color: ${(props) => props.theme.colors['blue-500']};
+
+    > span {
+      font-weight: 800;
+    }
+  }
 `
+
 export const SelectContainer = styled.div`
   width: 210px;
 `
 
 export const ContainerCards = styled.div`
+  width: 100%;
   display: grid;
   grid-template-columns: '1fr 1fr';
   gap: 16px;
