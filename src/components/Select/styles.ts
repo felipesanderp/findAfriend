@@ -9,7 +9,7 @@ export const SelectContainer = styled.select<SelectContainerProps>`
   padding: 14px;
   border-radius: 20px;
   border: none;
-  background-color: ${(props) => props.theme.colors['red-300']};
+  background-color: ${(props) => props.theme.colors['red-500']};
   color: ${(props) => props.theme.colors.white};
   height: 72px;
   font-weight: 800;
@@ -23,6 +23,6 @@ export const SelectContainer = styled.select<SelectContainerProps>`
 `
 
 export const Option = styled.option`
-  background-color: ${(props) => props.theme.colors['red-300']};
+  background-color: ${(props) => props.theme.colors['red-500']};
   color: ${(props) => props.theme.colors['blue-300']};
 `

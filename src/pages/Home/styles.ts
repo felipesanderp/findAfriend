@@ -2,7 +2,7 @@ import { styled } from 'styled-components'
 import { darken } from 'polished'
 
 export const Page = styled.div`
-  background-color: ${(props) => props.theme.colors['red-500']};
+  background-color: ${(props) => props.theme.colors['red-300']};
 `
 
 export const HomeContainer = styled.div`

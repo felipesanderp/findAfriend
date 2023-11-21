@@ -16,7 +16,7 @@ export const LoginContainer = styled.div`
   }
 `
 export const Banner = styled.div`
-  background-color: ${(props) => props.theme.colors['red-500']};
+  background-color: ${(props) => props.theme.colors['red-300']};
   border-radius: 20px;
   height: 100%;
 
