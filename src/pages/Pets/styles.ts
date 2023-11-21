@@ -18,6 +18,19 @@ export const AsideHeader = styled.header`
   padding: 81px 40px 27px 56px;
 `
 
+export const SearchContainer = styled.div`
+  display: flex;
+  gap: 12px;
+  margin-top: 26px;
+`
+
+export const UFSelectContainer = styled.div`
+  flex: 1;
+`
+export const StateSelectContainer = styled.div`
+  flex: 2;
+`
+
 export const AsideBody = styled.div`
   background-color: ${(props) => props.theme.colors['red-300']};
   height: 100%;
